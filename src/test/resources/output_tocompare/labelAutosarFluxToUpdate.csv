@@ -1,0 +1,43 @@
+Group;DataElement;BMS Functional Domain External Interface;SWC Prod;SWC Cons;Description;Datatype;Unit;Width;States;Initvalue;Physmin;Physmax;Runnable Prod;Runnable Cons
+Automatic generated for Transmission label autosar flux;pwrLimPlgChg;Yes;PackEstim;CdTSignalTx;"This interface informs on the maximum acceptable 
+power during charging process";float32;PSA_watt;1;IDENTICAL;0;-1000000;IDENTICAL;PackEstim.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;pwrLimDch10s;Yes;PackEstim;CdTSignalTx;No description found;float32;PSA_watt;1;IDENTICAL;0;IDENTICAL;1000000;PackEstim.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;iPack1EstCur;Yes;CellParam;CdTSignalTx;To be define;float32;PSA_ampere;1;IDENTICAL;0;-2000;2000;CellParam.1;CdTSignalTx.1;
+Automatic generated for Recpetion label autosar flux;ChgMgt_pwrMaxIdDchaProcHV;Yes;CdTSignalRx;Stub;Maximum indicated dischare power that will be send to electric vehicle supply equipment;float32;PSA_watt;1;IDENTICAL;0;IDENTICAL;1000000;CdTSignalRx.1;Stub.1;
+Automatic generated for Transmission label autosar flux;stIntLckESrvPlg;Yes;IntLckMgr;CdTSignalTx;E-Service Plug Status;uint8;PSA_no_unit;1;IDENTICAL;0;IDENTICAL;3;IntLckMgr.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;pwrLimDch30s;Yes;PackEstim;CdTSignalTx;"This interface informs on the maximum power that can 
+be supplied by HV storage system for discharging";float32;PSA_watt;1;IDENTICAL;0;IDENTICAL;1000000;PackEstim.1;CdTSignalTx.1;
+Automatic generated for Recpetion label autosar flux;FcComRx_noComVersCDM;Yes;CdTSignalRx;Stub;No description found;uint8;PSA_no_unit;1;IDENTICAL;0;IDENTICAL;255;CdTSignalRx.1;Stub.1;
+Automatic generated for Transmission label autosar flux;uBattOVThreshold;Yes;CellParam;CdTSignalTx;This interface informs on the maximum acceptable voltage by HV storage system for charging;float32;PSA_volt;1;IDENTICAL;0;IDENTICAL;1000;CellParam.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;bDateRlv;Yes;VshTx;CdTSignalTx;Relevance of the Date information " bit (b2) for the 2010 Fault Event Message;uint8;PSA_no_unit;1;IDENTICAL;0;IDENTICAL;1;VshTx.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;iPack1Cur;Yes;CdTBatCur;CdTSignalTx;Real current of HV battery;float32;PSA_ampere;1;IDENTICAL;0;-2000;2000;CdTBatCur.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;stBMSFault;Yes;VshTx;CdTSignalTx;To be defined;uint8;PSA_no_unit;1;IDENTICAL;0;IDENTICAL;3;VshTx.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;MaxEstCellVoltId;Yes;CellParam;CdTSignalTx;ID No. of cell with max. voltage;float32;PSA_no_unit;1;IDENTICAL;0;1.0;250.0;CellParam.1;CdTSignalTx.1;
+Automatic generated for Recpetion label autosar flux;Ext_iPackCurLem;Yes;CdTSignalRx;Stub;Current value (analog);float32;PSA_milliampere;1;IDENTICAL;0;-1550000.0;1550000;CdTSignalRx.1;Stub.1;
+Automatic generated for Transmission label autosar flux;stMainCtcSts;Yes;CtcMgr;CdTSignalTx;Contactors status;uint8;PSA_no_unit;1;IDENTICAL;0;IDENTICAL;3;CtcMgr.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;pwrLimChg2s;Yes;PackEstim;CdTSignalTx;HV battery maximum transient charging voltage;float32;PSA_watt;1;IDENTICAL;0;-1000000;IDENTICAL;PackEstim.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;uMaxEstCellVolt;Yes;CellParam;CdTSignalTx;Max. cell voltage;float32;PSA_volt;1;IDENTICAL;0;IDENTICAL;15.0;CellParam.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;noDEHKm;Yes;VshTx;CdTSignalTx;JDD number of kilometer;float32;PSA_kilometre;1;IDENTICAL;0;IDENTICAL;1677721.4;VshTx.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;tCoolWaterTemp;Yes;BatSenMon;CdTSignalTx;Battery input mesured Temperature;float32;PSA_degre;1;IDENTICAL;0;-40.0;214.0;BatSenMon.1;CdTSignalTx.1;
+Automatic generated for Recpetion label autosar flux;Ext_tiCurVehTmr;Yes;CdTSignalRx;Stub;Vehicle time counter;float32;PSA_second;1;IDENTICAL;0;IDENTICAL;429496729.3;CdTSignalRx.1;Stub.1;
+Automatic generated for Recpetion label autosar flux;Ext_stJDD2Answ;Yes;CdTSignalRx;Stub;Acknowledgement of reception of JDD event data;uint8;PSA_no_unit;1;IDENTICAL;0;IDENTICAL;7;CdTSignalRx.1;Stub.1;
+Automatic generated for Transmission label autosar flux;stDftCod;Yes;VshTx;CdTSignalTx;Fault codes;uint32;PSA_no_unit;1;IDENTICAL;0;IDENTICAL;16777215;VshTx.1;CdTSignalTx.1;
+Automatic generated for Recpetion label autosar flux;Ext_bfCurSenErrSts;Yes;CdTSignalRx;Stub;Non applicable;uint16;PSA_no_unit;1;IDENTICAL;0;IDENTICAL;13;CdTSignalRx.1;Stub.1;
+Automatic generated for Transmission label autosar flux;stElNw;Yes;VshTx;CdTSignalTx;EVSE state;uint8;PSA_no_unit;1;IDENTICAL;0;IDENTICAL;7;VshTx.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;pwrLimChg30s;Yes;PackEstim;CdTSignalTx;No description found;float32;PSA_watt;1;IDENTICAL;0;-1000000;IDENTICAL;PackEstim.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;stLifeJDD;Yes;VshTx;CdTSignalTx;JDD life status;uint32;PSA_no_unit;1;IDENTICAL;0;IDENTICAL;16777215;VshTx.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;tMaxEstModT;Yes;CellParam;CdTSignalTx;High Voltage Battery - maximal Temperature (among probes);float32;PSA_degre;1;IDENTICAL;0;-40.0;85;CellParam.1;CdTSignalTx.1;
+Automatic generated for Recpetion label autosar flux;ChgMgt_uElNwDC;Yes;CdTSignalRx;Stub;This interface informs on the selected EVSE instantaneous DC HV voltage.;float32;PSA_volt;1;IDENTICAL;0;IDENTICAL;1000;CdTSignalRx.1;Stub.1;
+Automatic generated for Transmission label autosar flux;pwrLimDch2s;Yes;PackEstim;CdTSignalTx;HV battery maximum transient discharging voltage;float32;PSA_watt;1;IDENTICAL;0;IDENTICAL;1000000;PackEstim.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;CodeEcu;Yes;VshTx;CdTSignalTx;ECU code;float32;PSA_no_unit;1;IDENTICAL;0;-128;127;VshTx.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;uBattUVThreshold;Yes;CellParam;CdTSignalTx;Minimum acceptable voltage during discharging process;float32;PSA_volt;1;IDENTICAL;0;IDENTICAL;1000;CellParam.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;stTypMsg;Yes;VshTx;CdTSignalTx;Kind of message;uint8;PSA_no_unit;1;IDENTICAL;0;IDENTICAL;3;VshTx.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;MinEstCellVoltId;Yes;CellParam;CdTSignalTx;ID No. of cell with min. voltage;float32;PSA_no_unit;1;IDENTICAL;0;1.0;250.0;CellParam.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;uMinEstCellVolt;Yes;CellParam;CdTSignalTx;Min. cell voltage;float32;PSA_volt;1;IDENTICAL;0;IDENTICAL;15.0;CellParam.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;stInsuFlt;Yes;VshTx;CdTSignalTx;Insulation failures diagnosis state;uint8;PSA_no_unit;1;IDENTICAL;0;IDENTICAL;7;VshTx.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;rPackSohRes;Yes;PackEstim;CdTSignalTx;State Of Health linked to battery internal resistance;float32;PSA_percent;1;IDENTICAL;0;0;100;PackEstim.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;tMinEstModT;Yes;CellParam;CdTSignalTx;HV battery minimal temperatur (among probes);float32;PSA_degre;1;IDENTICAL;0;-40.0;210.0;CellParam.1;CdTSignalTx.1;
+Automatic generated for Recpetion label autosar flux;ChgMgt_tiResiActCh;Yes;CdTSignalRx;Stub;Charge Remaining Time;float32;PSA_minute;1;IDENTICAL;0;IDENTICAL;4093;CdTSignalRx.1;Stub.1;
+Automatic generated for Transmission label autosar flux;uHvBatt;Yes;CellParam;CdTSignalTx;EPS HV Battery voltage;float32;PSA_volt;1;IDENTICAL;0;IDENTICAL;1000;CellParam.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;tAvgEstModT;Yes;CellParam;CdTSignalTx;HV battery average temperatur;float32;PSA_degre;1;IDENTICAL;0;-40.0;210.0;CellParam.1;CdTSignalTx.1;
+Automatic generated for Transmission label autosar flux;pwrLimChg10s;Yes;PackEstim;CdTSignalTx;No description found;float32;PSA_watt;1;IDENTICAL;0;-1000000;IDENTICAL;PackEstim.1;CdTSignalTx.1;

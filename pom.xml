@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.inetpsa.tgl01</groupId>
+    <artifactId>messinjector</artifactId>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.2</version>
+                <!-- nothing here -->
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.inetpsa.seph.messinjector.MessInjector</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <packaging>jar</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+    <url>http://maven.apache.org</url>
+
+    <distributionManagement>
+        <site>
+            <id>projectSite</id>
+            <url>http://maven.apache.org</url>
+        </site>
+    </distributionManagement>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <envInst>tgl01</envInst>
+
+        <maven.compiler.version>3.6.0</maven.compiler.version>
+        <maven.jar.version>3.0.2</maven.jar.version>
+        <maven.assemble.version>3.0.0</maven.assemble.version>
+        <launch4j.version>1.7.18</launch4j.version>
+
+        <lang3.version>3.0</lang3.version>
+        <slf4j.version>1.7.30</slf4j.version>
+        <logback.version>1.2.2</logback.version>
+        <jcommander.version>1.72</jcommander.version>
+        <junit.version>4.12</junit.version>
+    </properties>
+
+    <dependencies>
+
+        <!-- dependency used for XLSX file format -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.17</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.beust</groupId>
+            <artifactId>jcommander</artifactId>
+            <version>${jcommander.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+
+        <!-- dependency used for XLS older file format
+             (added for information) -->
+        <!--dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.17</version>
+        </dependency-->
+    </dependencies>
+
+
+</project>

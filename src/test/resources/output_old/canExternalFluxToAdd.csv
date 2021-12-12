@@ -1,0 +1,255 @@
+Group;DataElement;BMS Functional Domain External Interface;SWC Prod;SWC Cons;Description;Datatype;Unit;Width;States;Initvalue;Physmin;Physmax;Runnable Prod;Runnable Cons
+Composition Interface Reception;CDM_EVSE_109_B1_b7_CDM_CDMProtocolNumber;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;;uint8;PSA_no_unit;1;-;2.0;0;255;-;CdTSignalRx.1;
+Composition Interface Reception;CDM_EVSE_109_B2_b7_CDM_PresentOutputVoltage;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;;uint16;PSA_no_unit;1;-;0.0;0;65535;-;CdTSignalRx.1;
+Composition Interface Reception;CDM_EVSE_109_B4_b7_CDM_PresentChargingCurrent;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;;uint8;PSA_no_unit;1;-;0.0;0;255;-;CdTSignalRx.1;
+Composition Interface Reception;CDM_EVSE_109_B6_b0_CDM_ChargerStatus;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;;uint8;PSA_no_unit;1;-;0.0;0;1;-;CdTSignalRx.1;
+Composition Interface Reception;CDM_EVSE_109_B6_b1_CDM_ChargerErr;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;;uint8;PSA_no_unit;1;-;0.0;0;1;-;CdTSignalRx.1;
+Composition Interface Reception;CDM_EVSE_109_B6_b2_CDM_EnergizingState;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;;uint8;PSA_no_unit;1;-;0.0;0;1;-;CdTSignalRx.1;
+Composition Interface Reception;CDM_EVSE_109_B6_b3_CDM_BatteryIncompatibility;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;;uint8;PSA_no_unit;1;-;0.0;0;1;-;CdTSignalRx.1;
+Composition Interface Reception;CDM_EVSE_109_B6_b4_CDM_ChargingSystemErr;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;;uint8;PSA_no_unit;1;-;0.0;0;1;-;CdTSignalRx.1;
+Composition Interface Reception;CDM_EVSE_109_B6_b5_CDM_ChargingStopControl;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;;uint8;PSA_no_unit;1;-;1.0;0;1;-;CdTSignalRx.1;
+Composition Interface Reception;CDM_EVSE_109_B7_b7_CDM_ResChargingTime10s;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;;uint8;PSA_no_unit;1;-;0.0;0;255;-;CdTSignalRx.1;
+Composition Interface Reception;CDM_EVSE_109_B8_b7_CDM_ResChargingTime1min;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;;uint8;PSA_no_unit;1;-;0.0;0;255;-;CdTSignalRx.1;
+Composition Interface Reception;CDM_EVSE_108_B1_b0_CDM_WeldingDetection;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;;uint8;PSA_no_unit;1;-;1;0;1;-;CdTSignalRx.1;
+Composition Interface Reception;CDM_EVSE_108_B2_b7_CDM_AvlOutputVoltage;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;;uint16;PSA_no_unit;1;-;0;0;65535;-;CdTSignalRx.1;
+Composition Interface Reception;CDM_EVSE_108_B4_b7_CDM_AvlOutputCurrent;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;;uint8;PSA_no_unit;1;-;0;0;255;-;CdTSignalRx.1;
+Composition Interface Reception;CDM_EVSE_108_B5_b7_CDM_ThresholdVoltage;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;;uint16;PSA_no_unit;1;-;0;0;65535;-;CdTSignalRx.1;
+Composition Interface Transmission;CDM_EVSE_101_B2_b7_BMS_MaxChargingTime10s;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;0;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_101_B3_b7_BMS_MaxChargingTime1min;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;0;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_101_B4_b7_BMS_EstChargingTime;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;254;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_101_B6_b7_BMS_TotalBattCapacity;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint16;PSA_no_unit;1;-;45;0;65535;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_100_B1_b7_BMS_MinChargeCurrent;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;0;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_100_B5_b7_BMS_MaxBatteryVoltage;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint16;PSA_no_unit;1;-;400;0;65535;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_100_B7_b7_BMS_ChargeRateReference;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;100;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_102_B1_b7_BMS_CDMProtocolNumber;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;2;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_102_B2_b7_BMS_TargetBattVoltage;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint16;PSA_no_unit;1;-;0;0;65535;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_102_B4_b7_BMS_ChargingCurrentReq;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;0;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_102_B5_b0_BMS_BattOvervoltageErr;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;0;0;1;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_102_B5_b1_BMS_BattUndervoltageErr;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;0;0;1;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_102_B5_b2_BMS_BattCurrentDevErr;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;0;0;1;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_102_B5_b3_BMS_HighBattTempErr;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;0;0;1;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_102_B5_b4_BMS_BattVoltageDevErr;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;0;0;1;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_102_B6_b0_BMS_VehicleChargingEna;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;0;0;1;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_102_B6_b1_BMS_VehicleShiftPosition;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;0;0;1;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_102_B6_b2_BMS_ChargingSystemErr;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;0;0;1;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_102_B6_b3_BMS_VehicleStatus;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;1;0;1;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_102_B6_b4_BMS_StopReqBeforeCharging;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;0;0;1;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_102_B7_b7_BMS_StateOfCharge;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;0;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_B1_b7_LID_BATTCELLVOLT;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;LID identifications Batt Cell Volt;uint8;PSA_no_unit;1;"0:Emission_of_BMS_BATTCELLVOLT1_14B_BMS_BATTCELLVOLT2_14B_BMS_BATTCELLVOLT3_14B_BMS_BATTCELLVOLT4_14B
+1:Emission_of_BMS_BATTCELLVOLT5_14B_BMS_BATTCELLVOLT6_14B_BMS_BATTCELLVOLT7_14B_BMS_BATTCELLVOLT8_14B
+2:Emission_of_BMS_BATTCELLVOLT9_14B_BMS_BATTCELLVOLT10_14B_BMS_BATTCELLVOLT11_14B_BMS_BATTCELLVOLT12_14B
+3:Emission_of_BMS_BATTCELLVOLT13_14B_BMS_BATTCELLVOLT14_14B_BMS_BATTCELLVOLT15_14B_BMS_BATTCELLVOLT16_14B
+4:Emission_of_BMS_BATTCELLVOLT17_14B_BMS_BATTCELLVOLT18_14B_BMS_BATTCELLVOLT19_14B_BMS_BATTCELLVOLT20_14B
+5:Emission_of_BMS_BATTCELLVOLT21_14B_BMS_BATTCELLVOLT22_14B_BMS_BATTCELLVOLT23_14B_BMS_BATTCELLVOLT24_14B
+6:Emission_of_BMS_BATTCELLVOLT25_14B_BMS_BATTCELLVOLT26_14B_BMS_BATTCELLVOLT27_14B_BMS_BATTCELLVOLT28_14B
+7:Emission_of_BMS_BATTCELLVOLT29_14B_BMS_BATTCELLVOLT30_14B_BMS_BATTCELLVOLT31_14B_BMS_BATTCELLVOLT32_14B
+8:Emission_of_BMS_BATTCELLVOLT33_14B_BMS_BATTCELLVOLT34_14B_BMS_BATTCELLVOLT35_14B_BMS_BATTCELLVOLT36_14B
+9:Emission_of_BMS_BATTCELLVOLT37_14B_BMS_BATTCELLVOLT38_14B_BMS_BATTCELLVOLT39_14B_BMS_BATTCELLVOLT40_14B
+10:Emission_of_BMS_BATTCELLVOLT41_14B_BMS_BATTCELLVOLT42_14B_BMS_BATTCELLVOLT43_14B_BMS_BATTCELLVOLT44_14B
+11:Emission_of_BMS_BATTCELLVOLT45_14B_BMS_BATTCELLVOLT46_14B_BMS_BATTCELLVOLT47_14B_BMS_BATTCELLVOLT48_14B
+12:Emission_of_BMS_BATTCELLVOLT49_14B_BMS_BATTCELLVOLT50_14B_BMS_BATTCELLVOLT51_14B_BMS_BATTCELLVOLT52_14B
+13:Emission_of_BMS_BATTCELLVOLT53_14B_BMS_BATTCELLVOLT54_14B_BMS_BATTCELLVOLT55_14B_BMS_BATTCELLVOLT56_14B
+14:Emission_of_BMS_BATTCELLVOLT57_14B_BMS_BATTCELLVOLT58_14B_BMS_BATTCELLVOLT59_14B_BMS_BATTCELLVOLT60_14B
+15:Emission_of_BMS_BATTCELLVOLT61_14B_BMS_BATTCELLVOLT62_14B_BMS_BATTCELLVOLT63_14B_BMS_BATTCELLVOLT64_14B
+16:Emission_of_BMS_BATTCELLVOLT65_14B_BMS_BATTCELLVOLT66_14B_BMS_BATTCELLVOLT67_14B_BMS_BATTCELLVOLT68_14B
+17:Emission_of_BMS_BATTCELLVOLT69_14B_BMS_BATTCELLVOLT70_14B_BMS_BATTCELLVOLT71_14B_BMS_BATTCELLVOLT72_14B
+18:Emission_of_BMS_BATTCELLVOLT73_14B_BMS_BATTCELLVOLT74_14B_BMS_BATTCELLVOLT75_14B_BMS_BATTCELLVOLT76_14B
+19:Emission_of_BMS_BATTCELLVOLT77_14B_BMS_BATTCELLVOLT78_14B_BMS_BATTCELLVOLT79_14B_BMS_BATTCELLVOLT80_14B
+20:Emission_of_BMS_BATTCELLVOLT81_14B_BMS_BATTCELLVOLT82_14B_BMS_BATTCELLVOLT83_14B_BMS_BATTCELLVOLT84_14B
+21:Emission_of_BMS_BATTCELLVOLT85_14B_BMS_BATTCELLVOLT86_14B_BMS_BATTCELLVOLT87_14B_BMS_BATTCELLVOLT88_14B
+22:Emission_of_BMS_BATTCELLVOLT89_14B_BMS_BATTCELLVOLT90_14B_BMS_BATTCELLVOLT91_14B_BMS_BATTCELLVOLT92_14B
+23:Emission_of_BMS_BATTCELLVOLT93_14B_BMS_BATTCELLVOLT94_14B_BMS_BATTCELLVOLT95_14B_BMS_BATTCELLVOLT96_14B
+24:Emission_of_BMS_BATTCELLVOLT97_14B_BMS_BATTCELLVOLT98_14B_BMS_BATTCELLVOLT99_14B_BMS_BATTCELLVOLT100_14B
+25:Emission_of_BMS_BATTCELLVOLT101_14B_BMS_BATTCELLVOLT102_14B_BMS_BATTCELLVOLT103_14B_BMS_BATTCELLVOLT104_14B
+26:Emission_of_BMS_BATTCELLVOLT105_14B_BMS_BATTCELLVOLT106_14B_BMS_BATTCELLVOLT107_14B_BMS_BATTCELLVOLT108_14B";0;0;26;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID0_B2_b7_BMS_BATTCELLVOLT1_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID1_B2_b7_BMS_BATTCELLVOLT5_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID2_B2_b7_BMS_BATTCELLVOLT9_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID3_B2_b7_BMS_BATTCELLVOLT13_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID4_B2_b7_BMS_BATTCELLVOLT17_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID5_B2_b7_BMS_BATTCELLVOLT21_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID6_B2_b7_BMS_BATTCELLVOLT25_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID7_B2_b7_BMS_BATTCELLVOLT29_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID8_B2_b7_BMS_BATTCELLVOLT33_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID9_B2_b7_BMS_BATTCELLVOLT37_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID10_B2_b7_BMS_BATTCELLVOLT41_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID11_B2_b7_BMS_BATTCELLVOLT45_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID12_B2_b7_BMS_BATTCELLVOLT49_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID13_B2_b7_BMS_BATTCELLVOLT53_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID14_B2_b7_BMS_BATTCELLVOLT57_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID15_B2_b7_BMS_BATTCELLVOLT61_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID16_B2_b7_BMS_BATTCELLVOLT65_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID17_B2_b7_BMS_BATTCELLVOLT69_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID18_B2_b7_BMS_BATTCELLVOLT73_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID19_B2_b7_BMS_BATTCELLVOLT77_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID20_B2_b7_BMS_BATTCELLVOLT81_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID21_B2_b7_BMS_BATTCELLVOLT85_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID22_B2_b7_BMS_BATTCELLVOLT89_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID23_B2_b7_BMS_BATTCELLVOLT93_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID24_B2_b7_BMS_BATTCELLVOLT97_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID25_B2_b7_BMS_BATTCELLVOLT101_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID26_B2_b7_BMS_BATTCELLVOLT105_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID0_B3_b1_BMS_BATTCELLVOLT2_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID1_B3_b1_BMS_BATTCELLVOLT6_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID2_B3_b1_BMS_BATTCELLVOLT10_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID3_B3_b1_BMS_BATTCELLVOLT14_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID4_B3_b1_BMS_BATTCELLVOLT18_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID5_B3_b1_BMS_BATTCELLVOLT22_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID6_B3_b1_BMS_BATTCELLVOLT26_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID7_B3_b1_BMS_BATTCELLVOLT30_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID8_B3_b1_BMS_BATTCELLVOLT34_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID9_B3_b1_BMS_BATTCELLVOLT38_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID10_B3_b1_BMS_BATTCELLVOLT42_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID11_B3_b1_BMS_BATTCELLVOLT46_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID12_B3_b1_BMS_BATTCELLVOLT50_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID13_B3_b1_BMS_BATTCELLVOLT54_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID14_B3_b1_BMS_BATTCELLVOLT58_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID15_B3_b1_BMS_BATTCELLVOLT62_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID16_B3_b1_BMS_BATTCELLVOLT66_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID17_B3_b1_BMS_BATTCELLVOLT70_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID18_B3_b1_BMS_BATTCELLVOLT74_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID19_B3_b1_BMS_BATTCELLVOLT78_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID20_B3_b1_BMS_BATTCELLVOLT82_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID21_B3_b1_BMS_BATTCELLVOLT86_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID22_B3_b1_BMS_BATTCELLVOLT90_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID23_B3_b1_BMS_BATTCELLVOLT94_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID24_B3_b1_BMS_BATTCELLVOLT98_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID25_B3_b1_BMS_BATTCELLVOLT102_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID26_B3_b1_BMS_BATTCELLVOLT106_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID0_B5_b3_BMS_BATTCELLVOLT3_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID1_B5_b3_BMS_BATTCELLVOLT7_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID2_B5_b3_BMS_BATTCELLVOLT11_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID3_B5_b3_BMS_BATTCELLVOLT15_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID4_B5_b3_BMS_BATTCELLVOLT19_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID5_B5_b3_BMS_BATTCELLVOLT23_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID6_B5_b3_BMS_BATTCELLVOLT27_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID7_B5_b3_BMS_BATTCELLVOLT31_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID8_B5_b3_BMS_BATTCELLVOLT35_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID9_B5_b3_BMS_BATTCELLVOLT39_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID10_B5_b3_BMS_BATTCELLVOLT43_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID11_B5_b3_BMS_BATTCELLVOLT47_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID12_B5_b3_BMS_BATTCELLVOLT51_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID13_B5_b3_BMS_BATTCELLVOLT55_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID14_B5_b3_BMS_BATTCELLVOLT59_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID15_B5_b3_BMS_BATTCELLVOLT63_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID16_B5_b3_BMS_BATTCELLVOLT67_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID17_B5_b3_BMS_BATTCELLVOLT71_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID18_B5_b3_BMS_BATTCELLVOLT75_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID19_B5_b3_BMS_BATTCELLVOLT79_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID20_B5_b3_BMS_BATTCELLVOLT83_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID21_B5_b3_BMS_BATTCELLVOLT87_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID22_B5_b3_BMS_BATTCELLVOLT91_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID23_B5_b3_BMS_BATTCELLVOLT95_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID24_B5_b3_BMS_BATTCELLVOLT99_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID25_B5_b3_BMS_BATTCELLVOLT103_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID26_B5_b3_BMS_BATTCELLVOLT107_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID0_B7_b5_BMS_BATTCELLVOLT4_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID1_B7_b5_BMS_BATTCELLVOLT8_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID2_B7_b5_BMS_BATTCELLVOLT12_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID3_B7_b5_BMS_BATTCELLVOLT16_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID4_B7_b5_BMS_BATTCELLVOLT20_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID5_B7_b5_BMS_BATTCELLVOLT24_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID6_B7_b5_BMS_BATTCELLVOLT28_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID7_B7_b5_BMS_BATTCELLVOLT32_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID8_B7_b5_BMS_BATTCELLVOLT36_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID9_B7_b5_BMS_BATTCELLVOLT40_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID10_B7_b5_BMS_BATTCELLVOLT44_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID11_B7_b5_BMS_BATTCELLVOLT48_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID12_B7_b5_BMS_BATTCELLVOLT52_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID13_B7_b5_BMS_BATTCELLVOLT56_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID14_B7_b5_BMS_BATTCELLVOLT60_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID15_B7_b5_BMS_BATTCELLVOLT64_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID16_B7_b5_BMS_BATTCELLVOLT68_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID17_B7_b5_BMS_BATTCELLVOLT72_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID18_B7_b5_BMS_BATTCELLVOLT76_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID19_B7_b5_BMS_BATTCELLVOLT80_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID20_B7_b5_BMS_BATTCELLVOLT84_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID21_B7_b5_BMS_BATTCELLVOLT88_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID22_B7_b5_BMS_BATTCELLVOLT92_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID23_B7_b5_BMS_BATTCELLVOLT96_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID24_B7_b5_BMS_BATTCELLVOLT100_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID25_B7_b5_BMS_BATTCELLVOLT104_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_334_LID26_B7_b5_BMS_BATTCELLVOLT108_14B;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint16;PSA_volt;1;-;0;0;16383;CdTSignalTx.1;-;
+Composition Interface Reception;CDM_EVSE_118_B1_b0_CDM_DynamicControl;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;;uint8;PSA_no_unit;1;-;0.0;0;1;-;CdTSignalRx.1;
+Composition Interface Reception;CDM_EVSE_118_B1_b1_CDM_HighCurrentControl;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;;uint8;PSA_no_unit;1;-;0.0;0;1;-;CdTSignalRx.1;
+Composition Interface Reception;CDM_EVSE_118_B2_b7_CDM_AvlOutputCurrentExtd;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;;uint16;PSA_no_unit;1;-;0.0;0;65535;-;CdTSignalRx.1;
+Composition Interface Reception;CDM_EVSE_118_B4_b7_CDM_PresentChargingCurrentExtd;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;;uint16;PSA_no_unit;1;-;0.0;0;65535;-;CdTSignalRx.1;
+Composition Interface Transmission;RMS4_TBMU_583_B1_b7_HV_BATT_NB_PROBE_TEMP_MAX;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;ID of probe with max. temperature;uint8;PSA_no_unit;1;-;255;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;RMS4_TBMU_583_B2_b7_HV_BATT_NB_PROBE_TEMP_MIN;Yes;CdTSignalTx;TOPLEVELCOMPOSITION; ID of probe with min. temperature;uint8;PSA_no_unit;1;-;255;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_110_B1_b0_BMS_DynamicControl;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;0;0;1;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_110_B1_b1_BMS_HighCurrentControl;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint8;PSA_no_unit;1;-;0;0;1;CdTSignalTx.1;-;
+Composition Interface Transmission;CDM_EVSE_110_B2_b7_BMS_ChargingCurrentReqExtd;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;;uint16;PSA_no_unit;1;-;0;0;65535;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_B1_b7_LID_PROBETEMP;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;LID identifications Probe Temp;uint8;PSA_no_unit;1;"0:Emission_of_BMS_PROBETEMP1_BMS_PROBETEMP2_BMS_PROBETEMP3_BMS_PROBETEMP4_BMS_PROBETEMP5_BMS_PROBETEMP6_BMS_PROBETEMP7
+1:Emission_of_BMS_PROBETEMP8_BMS_PROBETEMP9_BMS_PROBETEMP10_BMS_PROBETEMP11_BMS_PROBETEMP12_BMS_PROBETEMP13_BMS_PROBETEMP14
+2:Emission_of_BMS_PROBETEMP15_BMS_PROBETEMP16_BMS_PROBETEMP17_BMS_PROBETEMP18_BMS_PROBETEMP19_BMS_PROBETEMP20_BMS_PROBETEMP21
+3:Emission_of_BMS_PROBETEMP22_BMS_PROBETEMP23_BMS_PROBETEMP24_BMS_PROBETEMP5_BMS_PROBETEMP26_BMS_PROBETEMP27_BMS_PROBETEMP28
+4:Emission_of_BMS_PROBETEMP29_BMS_PROBETEMP30_BMS_PROBETEMP31_BMS_PROBETEMP32_BMS_PROBETEMP33_BMS_PROBETEMP34_BMS_PROBETEMP35
+5:Emission_of_BMS_PROBETEMP36_BMS_PROBETEMP37_BMS_PROBETEMP38_BMS_PROBETEMP39_BMS_PROBETEMP40_BMS_PROBETEMP41_BMS_PROBETEMP42
+6:Emission_of_BMS_PROBETEMP43_BMS_PROBETEMP44_BMS_PROBETEMP45_BMS_PROBETEMP46_BMS_PROBETEMP47_BMS_PROBETEMP48_BMS_PROBETEMP49
+7:Emission_of_BMS_PROBETEMP50_BMS_PROBETEMP51_BMS_PROBETEMP52_BMS_PROBETEMP53_BMS_PROBETEMP54_LIBRE_16";0;0;7;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID0_B2_b7_BMS_PROBETEMP1;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID1_B2_b7_BMS_PROBETEMP8;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID2_B2_b7_BMS_PROBETEMP15;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID3_B2_b7_BMS_PROBETEMP22;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID4_B2_b7_BMS_PROBETEMP29;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID5_B2_b7_BMS_PROBETEMP36;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID6_B2_b7_BMS_PROBETEMP43;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID7_B2_b7_BMS_PROBETEMP50;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID0_B3_b7_BMS_PROBETEMP2;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID1_B3_b7_BMS_PROBETEMP9;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID2_B3_b7_BMS_PROBETEMP16;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID3_B3_b7_BMS_PROBETEMP23;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID4_B3_b7_BMS_PROBETEMP30;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID5_B3_b7_BMS_PROBETEMP37;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID6_B3_b7_BMS_PROBETEMP44;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID7_B3_b7_BMS_PROBETEMP51;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID0_B4_b7_BMS_PROBETEMP3;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID1_B4_b7_BMS_PROBETEMP10;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID2_B4_b7_BMS_PROBETEMP17;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID3_B4_b7_BMS_PROBETEMP24;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID4_B4_b7_BMS_PROBETEMP31;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID5_B4_b7_BMS_PROBETEMP38;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID6_B4_b7_BMS_PROBETEMP45;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID7_B4_b7_BMS_PROBETEMP52;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID0_B5_b7_BMS_PROBETEMP4;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID1_B5_b7_BMS_PROBETEMP11;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID2_B5_b7_BMS_PROBETEMP18;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID3_B5_b7_BMS_PROBETEMP25;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID4_B5_b7_BMS_PROBETEMP32;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID5_B5_b7_BMS_PROBETEMP39;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID6_B5_b7_BMS_PROBETEMP46;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID7_B5_b7_BMS_PROBETEMP53;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID0_B6_b7_BMS_PROBETEMP5;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID1_B6_b7_BMS_PROBETEMP12;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID2_B6_b7_BMS_PROBETEMP19;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID3_B6_b7_BMS_PROBETEMP26;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID4_B6_b7_BMS_PROBETEMP33;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID5_B6_b7_BMS_PROBETEMP40;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID6_B6_b7_BMS_PROBETEMP47;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID7_B6_b7_BMS_PROBETEMP54;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID0_B7_b7_BMS_PROBETEMP6;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID1_B7_b7_BMS_PROBETEMP13;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID2_B7_b7_BMS_PROBETEMP20;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID3_B7_b7_BMS_PROBETEMP27;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID4_B7_b7_BMS_PROBETEMP34;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID5_B7_b7_BMS_PROBETEMP41;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID6_B7_b7_BMS_PROBETEMP48;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID0_B8_b7_BMS_PROBETEMP7;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID1_B8_b7_BMS_PROBETEMP14;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID2_B8_b7_BMS_PROBETEMP21;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID3_B8_b7_BMS_PROBETEMP28;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID4_B8_b7_BMS_PROBETEMP35;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID5_B8_b7_BMS_PROBETEMP42;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Transmission;DYN_TBMU_3F4_LID6_B8_b7_BMS_PROBETEMP49;Yes;CdTSignalTx;TOPLEVELCOMPOSITION;To be define;uint8;PSA_degre;1;-;40;0;255;CdTSignalTx.1;-;
+Composition Interface Reception;CRNT_SENS_095_B7_b7_RfR;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;Reason for Reset;uint8;PSA_no_unit;1;"0:Default_(no_reset_)
+1:Reset_due_to_UndervoltageError
+2:Reset_due_to_Overtemperature
+3:Reset_due_to_clock_error
+4:Reset_due_to_Watch_Dog_error
+5:Reset_due_to_ECC_multibit_error
+6:Reset_due_to_Machine_Exception_error
+7:Reset_due_to_unknown_error";0;0;7;-;CdTSignalRx.1;
+Composition Interface Reception;CRNT_SENS_095_B2_b6_StartUp_Test;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;StartUp Test running or not;uint8;PSA_no_unit;1;"0:StartUp_Test_running_OR_Not_completed
+1:StartUp_Test_Completed";0;0;1;-;CdTSignalRx.1;
+Composition Interface Reception;CRNT_SENS_095_B2_b7_Current_ACQ;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;Current measurement acquired or Diagnosis is Ongoing;uint8;PSA_no_unit;1;"0:Current_not_acquired_and_Diagnosis_is_on_going
+1:Current_acquired_and_Diagnosis_is_in_evaluation_OR_completed";0;0;1;-;CdTSignalRx.1;

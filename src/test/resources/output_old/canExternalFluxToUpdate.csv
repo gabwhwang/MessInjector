@@ -1,0 +1,21 @@
+Group;DataElement;BMS Functional Domain External Interface;SWC Prod;SWC Cons;Description;Datatype;Unit;Width;States;Initvalue;Physmin;Physmax;Runnable Prod;Runnable Cons
+Composition Interface Reception;CRNT_SENS_095_B2_b3_Alive_Counter;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;Alive Counter;uint8;PSA_no_unit;1;-;0;0;15;-;CdTSignalRx.1;
+Composition Interface Reception;CRNT_SENS_095_B6_b7_Champs_de_Bits_Errors;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;Non applicable;uint16;PSA_no_unit;1;"0:E9_Error
+1:E10_Error
+2:E11_Error
+3:E12_Error
+4:E13_Error
+5:E1_Error
+6:E2_Error
+7:E3_Error
+8:E4_Error
+9:E5_Error
+10:E6_Error
+11:E7_Error
+12:E8_Error
+13:No_error";65535;0;13;-;CdTSignalRx.1;
+Composition Interface Reception;CRNT_SENS_095_B1_b7_CRC;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;CRC calculation of the next seven bytes;uint8;PSA_no_unit;1;-;0;0;255;-;CdTSignalRx.1;
+Composition Interface Reception;CRNT_SENS_095_B3_b7_CSM_Current;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;CSM current value (digital);uint16;PSA_ampere;1;-;65535;0;65535;-;CdTSignalRx.1;
+Composition Interface Reception;CRNT_SENS_095_B5_b7_CSM_Temperature;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;CSM temperature;uint8;PSA_degre;1;-;255;0;255;-;CdTSignalRx.1;
+Composition Interface Reception;CRNT_SENS_095_B2_b4_I_Qualifier;Yes;TOPLEVELCOMPOSITION;CdTSignalRx;Current channel error IFR data;uint8;PSA_no_unit;1;"0:QM
+1:Safety_Relevant";0;0;1;-;CdTSignalRx.1;

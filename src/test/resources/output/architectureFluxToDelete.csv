@@ -1,0 +1,110 @@
+Group;DataElement;BMS Functional Domain External Interface;SWC Prod;SWC Cons;Description;Datatype;Unit;Width;States;Initvalue;Physmin;Physmax;Runnable Prod;Runnable Cons
+Fast Charge GB;FcComRx_stChrgrIdfRslt;Yes;FcComRx;GBChrgnIf;Identification result;uint8;PSA_no_unit;1.0;"0:BMS_not_identifiable
+170:BMS_identifiable";0.0;0.0;170;FcComRx.1;GBChrgnIf.1;
+Flag indication;FcComRx_bCanChrgr;Yes;FcComRx;CDMChrgnIf;Flag to inform that CHAdeMO frames 108 109 are received from charger;boolean;PSA_no_unit;1.0;-;0.0;0.0;1.0;FcComRx.1;CDMChrgnIf.1;
+Fast Charge GB;FcComRx_tiChrgn;Yes;FcComRx;GBChrgnIf;Current charging duration;float32;PSA_second;1.0;-;0.0;0.0;600.0;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_stChrgrEmgyStopFlt;Yes;FcComRx;GBChrgnIf;GB Mode 4 EVSE emergency shutdown fault;uint8;PSA_no_unit;1.0;"0:normal
+1:Emergency_stop
+2:implausible_state";0.0;0.0;2;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_stTiOutBSTMsg;Yes;FcComRx;GBChrgnIf;Timeout when receiving BMS charging suspension message during GB Mode 4 communication;uint8;PSA_no_unit;1.0;"0:normal
+1:timeout
+2:implausible_state";0.0;0.0;2;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_stTiOutBCPMsg;Yes;FcComRx;GBChrgnIf;Timeout when receiving battery charging parameter message during GB Mode 4 communication;uint8;PSA_no_unit;1.0;"0:normal
+1:timeout
+2:implausible_state";0.0;0.0;2;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_stChrgrOverTFlt;Yes;FcComRx;GBChrgnIf;GB Mode 4 EVSE overtemperature fault;uint8;PSA_no_unit;1.0;"0:charger_temperature_is_normal
+1:charger_overtemperature
+2:implausible_state";0.0;0.0;2;FcComRx.1;GBChrgnIf.1;
+CAN Signal Diag Window;Ext_bDiagOBCDCDCtoBMS;Yes;Stub;CdTSignalRx;CAN Signal Diag Window;boolean;PSA_no_unit;1.0;-;1.0;0.0;1.0;Stub.1;CdTSignalRx.1;
+CAN Safety Error;stDgoCnt095;Yes;FltMgr;CanSftyRx;CAN Safety Alive Counter error for current frame 0x095;CS;PSA_no_unit;1.0;-;-;-;-;SetEventStatus;CanSftyRx.1;
+Fast Charge GB;FcComRx_uChrgrGB;Yes;FcComRx;GBChrgnIf;GB mode 4 EVSE maximum available output voltage;float32;PSA_volt;1.0;-;0.0;0.0;6553.5;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_uMinChrgrGB;Yes;FcComRx;GBChrgnIf;GB mode 4 EVSE minimum available output voltage;float32;PSA_volt;1.0;-;0.0;0.0;6553.5;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_bCanChrgrCST;Yes;FcComRx;GBChrgnIf;Flag to inform that CST message  is received from charger , content and cycle conform to the requirements of 9.3 and 10.3.3 in GB/T 27930-2015;boolean;PSA_no_unit;1.0;-;0.0;0.0;1.0;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_stTiOutBCSBSMMsg;Yes;FcComRx;GBChrgnIf;Timeout when receiving general battery charging status message during GB Mode 4 communication;uint8;PSA_no_unit;1.0;"0:normal
+1:timeout
+2:implausible_state";0.0;0.0;2;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_noChrgrGB;Yes;FcComRx;GBChrgnIf;GB Mode 4 EVSE Identification number;uint32;PSA_no_unit;1.0;-;0.0;0.0;4294967295;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_noComVersGB;Yes;FcComRx;GBChrgnIf;Communication protocol version number of GB Mode 4 EVSE;uint32;PSA_no_unit;1.0;-;0.0;0.0;16777215;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_stTiOutBCLMsg;Yes;FcComRx;GBChrgnIf;Timeout when receiving battery charging demand message during GB Mode 4 communication;uint8;PSA_no_unit;1.0;"0:normal
+1:timeout
+2:implausible_state";0.0;0.0;2;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_stChrgrItOverTFlt;Yes;FcComRx;GBChrgnIf;GB Mode 4 EVSE Internal over-temperature fault of charger;uint8;PSA_no_unit;1.0;"0:charger_connector_is_normal
+1:charger_connector_fault
+2:implausible_state";0.0;0.0;2;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_stTiOutBSDMsg;Yes;FcComRx;GBChrgnIf;Timeout when receiving BMS charging statistic data message during GB Mode 4 communication;uint8;PSA_no_unit;1.0;"0:normal
+1:timeout
+2:implausible_state";0.0;0.0;2;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_stTiOutBRMMsg;Yes;FcComRx;GBChrgnIf;Timeout when receiving BMS and vehicle identification message during GB Mode 4 communication;uint8;PSA_no_unit;1.0;"0:normal
+1:timeout
+2:implausible_state";0.0;0.0;2;FcComRx.1;GBChrgnIf.1;
+Flag indication;FcComRx_bCanChrgrExtd;Yes;FcComRx;CDMChrgnIf;Flag to inform that CHAdeMO extended frame 118 is received from charger;boolean;PSA_no_unit;1.0;-;0.0;0.0;1.0;FcComRx.1;CDMChrgnIf.1;
+Fast Charge GB;FcComRx_stChrgrUkwnFlt;Yes;FcComRx;GBChrgnIf;GB Mode 4 EVSE undefined fault;uint8;PSA_no_unit;1.0;"0:normal
+1:fault
+2:implausible_state";0.0;0.0;2;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_stTiOutBROMsg;Yes;FcComRx;GBChrgnIf;Timeout when receiving BMS ready for charging message during GB Mode 4 communication;uint8;PSA_no_unit;1.0;"0:normal
+1:timeout
+2:implausible_state";0.0;0.0;2;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_iMinChChrgrGB;Yes;FcComRx;GBChrgnIf;GB mode 4 EVSE minimum output current;float32;PSA_ampere;1.0;-;-400.0;-400.0;6153.5;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_stChrgrGenFlt;Yes;FcComRx;GBChrgnIf;Undefined GB Mode 4 EVSE error;uint8;PSA_no_unit;1.0;"0:normal
+1:timeout
+2:implausible_state";0.0;0.0;2;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_tiTotChrgn;Yes;FcComRx;GBChrgnIf;Total charging process duration;float32;PSA_second;1.0;-;0.0;0.0;600.0;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_iMaxChChrgrGB;Yes;FcComRx;GBChrgnIf;GB mode 4 EVSE maximum available output current;float32;PSA_ampere;1.0;-;-400.0;-400.0;6153.5;FcComRx.1;GBChrgnIf.1;
+Current Limit Estimation;PackEstim_iLimChg10s;Yes;PackEstim;CdTSignalTx;Charge current limit for 10 s;float32;PSA_ampere;1.0;-;0.0;-2000.0;0.0;PackEstim.2;CdTSignalTx.1;
+RCD;UCE_bWkuMain;Yes;RCD;"BmsStMgr
+CdTSignalRx";Main Wakeup flag from RCD;boolean;PSA_no_unit;1.0;-;0.0;0.0;1.0;RCD.1;"BmsStMgr.1
+CdTSignalRx.1";
+Fast Charge GB;FcComRx_uMaxChrgrGB;Yes;FcComRx;GBChrgnIf;GB mode 4 EVSE maximum available output voltage;float32;PSA_volt;1.0;-;0.0;0.0;6553.5;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_stReqETrfImpo;Yes;FcComRx;GBChrgnIf;GB Mode 4 EVSE Unable to transmit the required electric quantity;uint8;PSA_no_unit;1.0;"0:electric_quantity_transmission_is_normal
+1:electric_quantity_cannot_be_transmitted
+2:implausible_state";0.0;0.0;2;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_noChrgr;Yes;FcComRx;GBChrgnIf;GB Mode 4 EVSE Identification number;uint32;PSA_no_unit;1.0;-;0.0;0.0;4294967295;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_iChrgrGB;Yes;FcComRx;GBChrgnIf;GB Mode 4 EVSE Output current;float32;PSA_ampere;1.0;-;-400.0;-400.0;6153.5;FcComRx.1;GBChrgnIf.1;
+CAN Signal Diag Window;Ext_bDiagEVCUtoBMS;Yes;Stub;CdTSignalRx;CAN Signal Diag Window;boolean;PSA_no_unit;1.0;-;1.0;0.0;1.0;Stub.1;CdTSignalRx.1;
+Temperature measurement;VshTx_tPlugTempMax;Yes;VshTx;CdTSignalTx;Maximum temperature of the BEPR terminal;float32;PSA_degre;1.0;-;-40.0;-40.0;200.0;VshTx.1;CdTSignalTx.1;
+CTE STEP 2 CAN RX Siganl;Ext_iMaxChChrgrGB;Yes;CdTSignalRx;Stub;tbd;float32;PSA_ampere;1.0;-;-2000.0;-2000.0;0.0;CdTSignalRx.1;Stub.1;
+Fast Charge GB;FcComRx_stChrgrGBRdy;Yes;FcComRx;GBChrgnIf;GB Mode 4 EVSE ready for charging;uint8;PSA_no_unit;1.0;"0:charger_is_not_ready
+170:charger_is_ready
+255:invalid";0.0;0.0;255;FcComRx.1;GBChrgnIf.1;
+RCD;UCE_bfSlavePtlWkuSt;Yes;RCD;"VshTx
+CdTSignalRx";"Set of slave partial wakeup states, singly noted
+Slave_Partial_Wakeup_state_Xi (i from 1 to 16)";uint16;PSA_no_unit;1.0;-;0.0;0.0;65535.0;RCD.1;"VshTx.1
+CdTSignalRx.1";
+CAN Signal Diag Window;Ext_bDiagCMMtoBMS;Yes;Stub;CdTSignalRx;CAN Signal Diag Window;boolean;PSA_no_unit;1.0;-;1.0;0.0;1.0;Stub.1;CdTSignalRx.1;
+Current Limit Estimation;PackEstim_iLimChg30s;Yes;PackEstim;CdTSignalTx;Charge current limit for 30 s;float32;PSA_ampere;1.0;-;0.0;-2000.0;0.0;PackEstim.2;CdTSignalTx.1;
+Fast Charge GB;FcComRx_stChrgnFltSusp;Yes;FcComRx;GBChrgnIf;GB Mode 4 charging process suspension due to fault;uint8;PSA_no_unit;1.0;"0:normal
+1:suspension_due_to_fault
+2:implausible_state";0.0;0.0;2;FcComRx.1;GBChrgnIf.1;
+RCD;bShutDownAuth;Yes;BswGw;TOPLEVELCOMPOSITION;Interface of ECU shutdown authorization for BswM;MS;PSA_no_unit;1.0;"0:SHUT_DOWN_AUTH_FALSE
+1:SHUT_DOWN_AUTH_TRUE";SHUT_DOWN_AUTH_FALSE;0.0;1.0;BswGw.1;-;
+Fast Charge GB;FcComRx_bCanChrgrCRO;Yes;FcComRx;GBChrgnIf;Flag to inform that CRO message  is received from charger , content and cycle conform to the requirements of 9.3 and 10.3.3 in GB/T 27930-2015;boolean;PSA_no_unit;1.0;-;0.0;0.0;1.0;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_bCanChrgrCRM;Yes;FcComRx;GBChrgnIf;Flag to inform that CRM message  is received from charger , content and cycle conform to the requirements of 9.3 and 10.3.3 in GB/T 27930-2015;boolean;PSA_no_unit;1.0;-;0.0;0.0;1.0;FcComRx.1;GBChrgnIf.1;
+RCD;stCAN1ComReq;Yes;BswGw;TOPLEVELCOMPOSITION;Interface of CAN Communication Request for BswM;MS;PSA_no_unit;1.0;"0:CAN1_COM_REQ_NO_COM
+1:CAN1_COM_REQ_FULL_COM
+2:CAN1_COM_REQ_ELEC_INTEG_MODE";CAN1_COM_REQ_NO_COM;0.0;2.0;BswGw.1;-;
+12V Measurement;IoHwAb_uPwrSply12V;Yes;IoHwAb;CdTSignalRx;ECU power supply 12V measurement: produceur PwrIf remplacé par IoHwAb VfR5;float32;PSA_volt;1.0;-;0.0;0.0;26.0;IoHwAb.1;CdTSignalRx.1;
+Power Limit Estimation;PackEstim_iLimDch10s;Yes;PackEstim;CdTSignalTx;Signed discharge current limit for 10 sec time horizon, based on weakest cell;float32;PSA_ampere;1.0;-;0.0;0.0;2000.0;PackEstim.2;CdTSignalTx.1;
+Fast Charge GB;FcComRx_bCanChrgrCSD;Yes;FcComRx;GBChrgnIf;Flag to inform that CSD message  is received from charger , content and cycle conform to the requirements of 9.3 and 10.3.3 in GB/T 27930-2015;boolean;PSA_no_unit;1.0;-;0.0;0.0;1.0;FcComRx.1;GBChrgnIf.1;
+CTE STEP 2 CAN TX Siganl;ChgMgr_tiChRemTi;Yes;ChgMgr;CdTSignalTx;Remaing charging time in second;float32;PSA_minute;1.0;-;4094.0;0.0;4094.0;ChgMgr.2;CdTSignalTx.1;
+CAN Signal Diag Window;Ext_bDiagCRNTtoBMS;Yes;Stub;CdTSignalRx;CAN Signal Diag Window;boolean;PSA_no_unit;1.0;-;1.0;0.0;1.0;Stub.1;CdTSignalRx.1;
+Fast Charge GB;FcComRx_stChrgnHVBSusp;Yes;FcComRx;GBChrgnIf;GB Mode 4 charging process suspension due to BMS suspension request;uint8;PSA_no_unit;1.0;"0:normal
+1:Suspension_by_BMS_BST_frame_received
+2:implausible_state";0.0;0.0;2;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_bCanChrgrCML;Yes;FcComRx;GBChrgnIf;Flag to inform that CML message  is received from charger , content and cycle conform to the requirements of 9.3 and 10.3.3 in GB/T 27930-2015;boolean;PSA_no_unit;1.0;-;0.0;0.0;1.0;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_stChrgrCdnSusp;Yes;FcComRx;GBChrgnIf;GB Mode 4 charging process suspension due to reaching the suspension condition of charger;uint8;PSA_no_unit;1.0;"0:normal
+1:reach_the_set_suspension_condition_of_charger
+2:implausible_state";0.0;0.0;2;FcComRx.1;GBChrgnIf.1;
+CAN Safety Error;stDgoChk095;Yes;FltMgr;CanSftyRx;CAN Safety Checksum error for current frame 0x095;CS;PSA_no_unit;1.0;-;-;-;-;SetEventStatus;CanSftyRx.1;
+Fast Charge GB;FcComRx_wTotChrgn;Yes;FcComRx;GBChrgnIf;Total charging energy transfered during charging process;float32;PSA_kilowatt_hour;1.0;-;0.0;0.0;1000.0;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_bCanChrgrCHM;Yes;FcComRx;GBChrgnIf;Flag to inform that CHM message  is received from charger , content and cycle conform to the requirements of 9.3 and 10.3.3 in GB/T 27930-2015;boolean;PSA_no_unit;1.0;-;0.0;0.0;1.0;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_stChrgnManSusp;Yes;FcComRx;GBChrgnIf;GB Mode 4 charging process suspension due to manual suspension request;uint8;PSA_no_unit;1.0;"0:normal
+1:manual_suspension
+2:implausible_state";0.0;0.0;2;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_bCanChrgrCEM;Yes;FcComRx;GBChrgnIf;Flag to inform that CEM message  is received from charger , content and cycle conform to the requirements of 9.3 and 10.3.3 in GB/T 27930-2015;boolean;PSA_no_unit;1.0;-;0.0;0.0;1.0;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_stVoltHVBNotNormFlt;Yes;FcComRx;GBChrgnIf;GB Mode 4 EVSE abnormal voltage fault;uint8;PSA_no_unit;1.0;"0:normal
+1:timeout
+2:implausible_state";0.0;0.0;2;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_stChrgrCurNotNormFlt;Yes;FcComRx;GBChrgnIf;GB Mode 4 EVSE current not matching fault;uint8;PSA_no_unit;1.0;"0:current_matching
+1:current_not_matching
+2:implausible_state";0.0;0.0;2;FcComRx.1;GBChrgnIf.1;
+Fast Charge GB;FcComRx_bCanChrgrCCS;Yes;FcComRx;GBChrgnIf;Flag to inform that CCS message  is received from charger , content and cycle conform to the requirements of 9.3 and 10.3.3 in GB/T 27930-2015;boolean;PSA_no_unit;1.0;-;0.0;0.0;1.0;FcComRx.1;GBChrgnIf.1;
